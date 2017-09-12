@@ -7,7 +7,8 @@ pasteTilesInHTML();
 
 console.log(tiles);
 
-// Проверка, может ли игрок пойти (поменять соседние тайлы)
+// Проверка,
+// может ли игрок пойти (поменять соседние тайлы)
 
 function pasteTilesInHTML () {
     var content = "";
