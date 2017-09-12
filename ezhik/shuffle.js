@@ -13,7 +13,7 @@ function pasteTilesInHTML () {
     var content = "";
     for (var i = 0; i < tiles.length; i++) {
         content +=
-            "<button id=\"" + i + "\" onclick=\"step(this)\" class=\"tile tile-bg\"><img src=\"/img/lvl1/" + (tiles[i] + 1) + ".jpg\"></button>\n";
+            "<button id=\"" + i + "\" onclick=\"step(this)\" class=\"tile tile-bg\"><img src=\"img/lvl1/" + (tiles[i] + 1) + ".jpg\"></button>\n";
     }
     console.log(content);
     document.getElementById('ezh-border-in').innerHTML = content; // Меняем содержимое ezh-border-in
