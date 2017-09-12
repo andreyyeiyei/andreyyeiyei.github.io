@@ -1,0 +1,70 @@
+html {
+    /* Variables */
+    --sizeBlock: 500px;
+    --sizeMain: calc(var(--sizeBlock) + 50px);
+
+    --sizeTile: 155px;
+    --sizeImg: calc(var(--sizeTile) - 24px);
+}
+
+body {
+    background: url("img/wood.png")
+}
+
+#ezh-wrapper {
+    margin: 50px auto 100px auto;
+    width: var(--sizeMain);
+}
+
+#ezh-board {
+    width: var(--sizeBlock); height: var(--sizeBlock);
+
+    margin: 0 auto;
+
+    background: url('img/board.png') no-repeat;
+    background-size: 100% auto;
+}
+
+
+#ezh-border {
+    width: var(--sizeBlock); height: var(--sizeBlock);
+
+    background: url('img/border.png') no-repeat;
+    background-size: 100% auto;
+}
+
+#ezh-border-in {
+    padding-top: 57px;
+    margin-left: 44px;
+    margin-right: 40px;
+}
+
+/* Tiles */
+.tile {
+    float: left;
+    padding: 0;
+    height: var(--sizeTile); width: var(--sizeTile);
+    margin: -21px -9px 4px;
+    border: none;
+    line-height: 0;
+    outline: 0;
+}
+
+.tile > img {
+    margin-top: -3px;
+    height: var(--sizeImg);  width: var(--sizeImg);
+}
+
+.tile-bg {
+    background: url("img/tile.png") no-repeat;
+    background-size: contain;
+}
+
+.tile-bg:hover {
+
+    background: url("img/tile_select.png") no-repeat;
+    background-size: contain;
+
+    position: relative;
+    z-index: 1;
+}
