@@ -58,7 +58,7 @@ function isWin () {
     console.log("win");
     hiddenID = -1;
     showAnimated(buttons[8]);
-    alert("Картинка собрана!");
+    // alert("Картинка собрана!");
 }
 
 // Получаем имя файла без расширения
